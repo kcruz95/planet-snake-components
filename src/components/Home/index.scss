@@ -2,3 +2,19 @@
   width: 65%;
   margin-top: 5em;
 }
+
+@mixin graph-height {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32em;
+  height: 100%;
+}
+
+#gauge-chart {
+  @include graph-height();
+}
+
+#line-chart {
+  @include graph-height();
+}
