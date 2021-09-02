@@ -1,5 +1,7 @@
 import React from "react";
 import HeaterControl from "./HeaterControl";
+import HumidexGraph from "./HumidexGraph";
+import TempGraph from "./TempGraph";
 
 // This generates a fairly open ended button thats used in multiple places
 import "./index.scss";
@@ -14,6 +16,9 @@ export default function Home(props) {
           alt="Sunnny the snake"
         />
       }
+
+      <HumidexGraph zone="zone" />
+      <TempGraph zone="zone" />
       <HeaterControl currentTemp={31.5} targetTemp={35} zone="Basking" />
     </section>
   );
