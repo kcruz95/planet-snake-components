@@ -3,7 +3,9 @@ import Iframe from "react-iframe";
 
 import "./HumidexGraph.scss";
 
+
 export default function HumidexGraph(props) {
+
 
   return (
     <section className="control-layout">
