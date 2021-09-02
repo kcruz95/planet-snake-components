@@ -1,14 +1,9 @@
 import React from "react";
-import Iframe from 'react-iframe'
-
-import RemoveOutlinedIcon from "@material-ui/icons/RemoveOutlined";
-import AddOutlinedIcon from "@material-ui/icons/AddOutlined";
+import Iframe from "react-iframe";
 
 import "./HumidexGraph.scss";
 
-// This generates a fairly open ended button thats used in multiple places
 export default function HumidexGraph(props) {
-
 
   return (
     <section className="control-layout">

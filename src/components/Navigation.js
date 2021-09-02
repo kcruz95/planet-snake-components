@@ -115,7 +115,7 @@ export default function NavigationDrawer() {
           >
             <MenuIcon />
           </IconButton>
-          Planet Snake Dashboard
+          Terrarium Options
         </Toolbar>
       </AppBar>
       <Drawer
@@ -146,8 +146,23 @@ export default function NavigationDrawer() {
             <ListItemIcon>
               <TvOutlinedIcon />
             </ListItemIcon>
-            <ListItemText primary={"Home"} />
+            <ListItemText primary={"SnekState CCTV"} />
           </ListItem>
+
+          <ListItem button key={"humidity"}>
+            <ListItemIcon>
+              {/* <TvOutlinedIcon /> */}
+            </ListItemIcon>
+            <ListItemText primary={"Humidity"} />
+          </ListItem>
+
+          <ListItem button key={"temperature"}>
+            <ListItemIcon>
+              {/* <TvOutlinedIcon /> */}
+            </ListItemIcon>
+            <ListItemText primary={"Temperature"} />
+          </ListItem>
+
         </List>
         <Divider />
       </Drawer>
