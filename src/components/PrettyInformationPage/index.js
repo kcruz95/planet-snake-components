@@ -1,4 +1,10 @@
-class ApexChart extends React.Component {
+
+import React from "react";
+import ApexCharts, { ApexChart } from "apexcharts";
+import ReactDOM from "react-dom";
+import ReactApexChart from "react-apexcharts";
+
+class TempChart extends React.PureComponent {
   constructor(props) {
     super(props);
 
@@ -121,25 +127,21 @@ class ApexChart extends React.Component {
           type: 'datetime',
         },
       },
-
-
     };
   }
-
-
 
   render() {
     return (
 
-
+      // <p>Hello</p>
       <div id="chart">
         <ReactApexChart options={this.state.options} series={this.state.series} type="line" height={350} />
       </div>
-
 
     );
   }
 }
 
-const domContainer = document.querySelector('#app');
-ReactDOM.render(React.createElement(ApexChart), domContainer);
+export default TempChart
+// const domContainer = document.querySelector('#app');
+// ReactDOM.render(React.createElement(ApexChart), domContainer);
