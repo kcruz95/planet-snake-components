@@ -11,7 +11,7 @@ class TempChart extends React.PureComponent {
     this.state = {
 
       series: [{
-        data: series.monthDataSeries1.prices
+        // data: series.monthDataSeries1.prices
       }],
       options: {
         chart: {
@@ -122,7 +122,7 @@ class TempChart extends React.PureComponent {
           text: 'Line with Annotations',
           align: 'left'
         },
-        labels: series.monthDataSeries1.dates,
+        // labels: series.monthDataSeries1.dates,
         xaxis: {
           type: 'datetime',
         },

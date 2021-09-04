@@ -1,7 +1,7 @@
 import React from "react";
 import HeaterControl from "./HeaterControl";
 // import HumidexGraph from "./HumidexGraph";
-// import TempGraph from "./TempGraph";
+import TempGraph from "./TempGraph";
 import TempChart from "../PrettyInformationPage/index"
 
 // This generates a fairly open ended button thats used in multiple places
@@ -19,8 +19,8 @@ export default function Home(props) {
       }
 
       {/* <HumidexGraph zone="zone" /> */}
-      {/* <TempGraph zone="zone" /> */}
-      <TempChart />
+      <TempGraph zone="zone" />
+      {/* <TempChart /> */}
       <HeaterControl currentTemp={31.5} targetTemp={35} zone="Basking" />
     </section>
   );

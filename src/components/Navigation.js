@@ -160,12 +160,14 @@ export default function NavigationDrawer() {
             </ListItemIcon>
             <ListItemText primary={"Home"} />
           </ListItem>
+
           <ListItem button key={"home"}>
             <ListItemIcon>
               <TimelineIcon />
             </ListItemIcon>
             <ListItemText primary={"Temperature History"} />
           </ListItem>
+
         </List>
         <Divider />
       </Drawer>
